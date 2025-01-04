@@ -1,8 +1,8 @@
 import MetaTrader5 as mt5
 
-account = 52103212  # Your account number (integer)
-password = "IFEHqK!4&@@jDo"  # Your password (string)
-server = "ICMarketsSC-Demo"  # Your broker's server (string)
+account = ACC_NUM  # Your account number (integer)
+password = "PASSWORD"  # Your password (string)
+server = "SERVER"  # Your broker's server (string)
 
 # Log in to the account
 if not mt5.initialize():
