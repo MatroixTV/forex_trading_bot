@@ -12,7 +12,7 @@ if project_directory is None:
     project_directory = 'C:/Users/ismac/PycharmProjects/forex_trading_bot'  # For ismac
 
 # Define the path to the data file using environment variable or default
-data_file = os.getenv('DATA_FILE', 'data/EURUSD_2024-12-25_17-57-19.csv')
+data_file = os.getenv('DATA_FILE', 'data/EURUSD.csv')
 
 # Verify that the paths are correct
 print(f"Using project directory: {project_directory}")
@@ -44,7 +44,7 @@ print("Final columns in the data:", df.columns)
 print(df.head())
 
 # Save the cleaned data to a new CSV file
-cleaned_file_path = os.path.join(project_directory, 'data', 'EURUSD_cleaned.csv')
+cleaned_file_path = os.path.join(project_directory, 'data', 'EURUSD.csv')
 df.to_csv(cleaned_file_path)
 
 print(f"Cleaned data saved to {cleaned_file_path}")
